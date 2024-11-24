@@ -94,7 +94,7 @@ RUN apt -y autoremove \
 ENV CGO_ENABLED=1
 
 # Install Wails
-ARG WAILS_VERSION=v2.8.2
+ARG WAILS_VERSION=v2.9.2
 RUN go install github.com/wailsapp/wails/v2/cmd/wails@${WAILS_VERSION} \
     && go clean -cache && rm -rf /root/go/pkg
 
